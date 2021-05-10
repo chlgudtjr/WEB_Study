@@ -112,7 +112,22 @@ public class ServletL implements ServletContextListener {
 
 ---
 
-### 5.후손 선택자와 자식 선택자에 대하여 설명하시오.
+### 5. Servlet에서 forward방법은?
+
+```java
+RequestDispatcher dispatcher = request.getRequestDispatcher(viewPage);
+dispatcher.forward(request, response);
+
+/*
+	클라이언트의 최초 요청을 받을 servlet내에 특정 자원에 처리를 요청하고 처리 결과를 
+	얻어오는 기능을 수행하는 클래스인 RequestDispatcher객체를 사용하여 viewPage에서 요청받은 것을
+	설계된 로직에 의해 실행되어 클라이언트 요청에 알맞는 UI화면을 응답시켜준다.
+*/
+```
+
+---
+
+### 6.후손 선택자와 자식 선택자에 대하여 설명하시오.
 
 > 자식선택자
 
@@ -138,7 +153,7 @@ A B{
 
 ---
 
-### 6. 아래 문제를 푸시오.
+### 7. 아래 문제를 푸시오.
 
 ![12-30 1번](https://user-images.githubusercontent.com/75012998/103348087-5983c300-4adc-11eb-97bd-5e3fd1ea2d6d.png)
 
